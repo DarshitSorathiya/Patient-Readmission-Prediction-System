@@ -1,0 +1,49 @@
+=================================================================
+DIABETES READMISSION MODEL — EVALUATION REPORT
+Generated : 2026-03-15 06:13:09
+Pipeline  : SMOTE + Random Forest + XGBoost Comparison
+=================================================================
+
+IMBALANCE STRATEGY
+  Method       : SMOTE
+  Strategy     : 1.0 (minority = 100% of majority)
+  k_neighbors  : 5
+  Applied to   : Training data ONLY
+
+MODEL COMPARISON (TEST SET)
+  Metric                    Random Forest          XGBoost
+  --------------------------------------------------------
+  ROC-AUC                          0.6365           0.6351
+  Precision                        0.1602           0.2022
+  Recall                           0.1231           0.0826
+  F1 Score                         0.1392           0.1173
+
+  Best Model : Random Forest
+
+CROSS-VALIDATION (SMOTE TRAINING DATA)
+  Random Forest          AUC: 0.9897 +/- 0.0007
+  XGBoost                AUC: 0.9850 +/- 0.0007
+
+OUTPUT FILES
+  confusion_matrix.png
+  confusion_matrix_comparison.png
+  cv_auc_comparison.png
+  feature_importance.png
+  feature_importance_comparison.png
+  learning_curves.png
+  median_imputer.pkl
+  model_evaluation_report.txt
+  random_forest_diabetes.pkl
+  roc_curve.png
+  roc_curve_comparison.png
+  score_distribution.png
+  score_distribution_comparison.png
+  shap_beeswarm.png
+  shap_beeswarm_xgboost.png
+  shap_importance.png
+  shap_importance_xgboost.png
+  xgboost_diabetes.json
+  xgboost_diabetes.pkl
+  xgboost_diabetes_readmission.json
+  xgboost_diabetes_readmission.pkl
+  xgboost_learning_curves.png
